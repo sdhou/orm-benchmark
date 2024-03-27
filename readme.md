@@ -43,7 +43,7 @@ INSERT INTO oye (Column1,Column2,Column3,Column4,Column5,Column6,Column7,Column8
 select * from oye
 ```
 
-## operation result
+## command
 
 ```cmd
 npm i
@@ -57,7 +57,11 @@ time node typeorm.js
 time node prisma.js
 time node prisma.js
 time node prisma.js
+```
 
+## operation result
+
+```txt
 node sqlite.js  5.10s user 1.69s system 127% cpu 5.310 total
 node sqlite.js  5.12s user 1.67s system 127% cpu 5.325 total
 node sqlite.js  5.12s user 1.67s system 127% cpu 5.338 total
