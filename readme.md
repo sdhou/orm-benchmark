@@ -4,6 +4,46 @@
 - nodejs prisma
 - nodejs typeorm
 
+## Table Structure
+
+```txt
+CREATE TABLE oye (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
+    Column1 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column2 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column3 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column4 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column5 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column6 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column7 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column8 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column9 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column10 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column11 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column12 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column13 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column14 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column15 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column16 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column17 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column18 TEXT(20) DEFAULT ('') NOT NULL, 
+    Column19 TEXT(20) DEFAULT ('') NOT NULL);
+```
+
+## data 20 row
+
+```sql
+INSERT INTO oye (Column1,Column2,Column3,Column4,Column5,Column6,Column7,Column8,Column9,Column10,Column11,Column12,Column13,Column14,Column15,Column16,Column17,Column18,Column19) VALUES ('abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst','abcdefghijklmnopqrst');
+```
+
+## query
+
+```sql
+select * from oye
+```
+
+## operation result
+
 ```cmd
 npm i
 tsc
