@@ -8,12 +8,16 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.11.30",
+  "dependencies": {
     "prisma": "^5.11.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.3",
+    "reflect-metadata": "^0.2.1",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
     "@prisma/client": "^5.11.0",
-    "sqlite3": "^5.1.7"
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
   }
 }

@@ -1,15 +1,29 @@
 # orm benchmark
 
-## nodejs native query
+- nodejs native query
+- nodejs prisma
+- nodejs typeorm
 
-```txt
-time npx ts-node sqlite.ts
-npx ts-node sqlite.ts  6.39s user 1.77s system 136% cpu 5.951 total
-```
+```cmd
+npm i
+tsc
+time node sqlite.js
+time node sqlite.js
+time node sqlite.js
+time node typeorm.js
+time node typeorm.js
+time node typeorm.js
+time node prisma.js
+time node prisma.js
+time node prisma.js
 
-## nodejs prisma
-
-```txt
-time npx ts-node prisma.ts
-npx ts-node prisma.ts  27.01s user 1.62s system 105% cpu 27.233 total
+node sqlite.js  5.10s user 1.69s system 127% cpu 5.310 total
+node sqlite.js  5.12s user 1.67s system 127% cpu 5.325 total
+node sqlite.js  5.12s user 1.67s system 127% cpu 5.338 total
+node typeorm.js  25.06s user 1.71s system 102% cpu 26.244 total
+node typeorm.js  25.24s user 1.68s system 102% cpu 26.343 total
+node typeorm.js  25.42s user 1.89s system 101% cpu 26.833 total
+node prisma.js  26.34s user 1.80s system 101% cpu 27.673 total
+node prisma.js  26.41s user 1.79s system 101% cpu 27.738 total
+node prisma.js  26.15s user 1.69s system 102% cpu 27.255 total
 ```
