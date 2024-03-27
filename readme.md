@@ -27,7 +27,8 @@ CREATE TABLE oye (
     Column16 TEXT(20) DEFAULT ('') NOT NULL, 
     Column17 TEXT(20) DEFAULT ('') NOT NULL, 
     Column18 TEXT(20) DEFAULT ('') NOT NULL, 
-    Column19 TEXT(20) DEFAULT ('') NOT NULL);
+    Column19 TEXT(20) DEFAULT ('') NOT NULL
+);
 ```
 
 ## data 20 row
