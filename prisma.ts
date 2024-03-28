@@ -4,7 +4,8 @@ const prisma = new PrismaClient();
 
 async function main() {
   for (let i = 0; i < 100000; i++) {
-    let a = await prisma.oye.findMany();
+    const a = await prisma.oye.findMany();
+    // console.log(a);
   }
 }
 

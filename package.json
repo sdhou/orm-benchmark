@@ -9,8 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "prisma": "^5.11.0",
-    "reflect-metadata": "^0.2.1",
+    "sequelize": "^6.37.1",
     "sqlite3": "^5.1.7",
     "typeorm": "^0.3.20"
   },

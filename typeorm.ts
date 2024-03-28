@@ -1,5 +1,5 @@
 import { DataSource, BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import "reflect-metadata";
+require("dotenv").config();
 
 @Entity()
 export class Oye extends BaseEntity {
@@ -47,7 +47,7 @@ export class Oye extends BaseEntity {
 
 const AppDataSource = new DataSource({
   type: "sqlite",
-  database: "/opt/code/testnode/sqlite.db",
+  database: process.env.OTHER_DATABASE_URL,
   synchronize: false,
   logging: false,
   migrationsRun: false,
@@ -60,6 +60,7 @@ AppDataSource.initialize()
   .then(async () => {
     for (let i = 0; i < 100000; i++) {
       const a = await AppDataSource.manager.find(Oye);
+      // console.log(a);
     }
   })
   .catch((error) => console.log(error));

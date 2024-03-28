@@ -3,6 +3,7 @@
 - nodejs native query
 - nodejs prisma
 - nodejs typeorm
+- nodejs sequelize
 
 ## Table Structure
 
@@ -49,14 +50,9 @@ select * from oye
 npm i
 tsc
 time node sqlite.js
-time node sqlite.js
-time node sqlite.js
-time node typeorm.js
-time node typeorm.js
 time node typeorm.js
 time node prisma.js
-time node prisma.js
-time node prisma.js
+time node sequelize.js
 ```
 
 ## operation result
@@ -71,4 +67,7 @@ node typeorm.js  25.42s user 1.89s system 101% cpu 26.833 total
 node prisma.js  26.34s user 1.80s system 101% cpu 27.673 total
 node prisma.js  26.41s user 1.79s system 101% cpu 27.738 total
 node prisma.js  26.15s user 1.69s system 102% cpu 27.255 total
+node sequelize.js  66.42s user 6.64s system 144% cpu 50.663 total
+node sequelize.js  66.38s user 6.56s system 144% cpu 50.581 total
+node sequelize.js  65.99s user 6.57s system 143% cpu 50.714 total
 ```

@@ -1,7 +1,8 @@
 import sqlite3 from "sqlite3";
-const db = new sqlite3.Database("./sqlite.db");
+require("dotenv").config();
+const db = new sqlite3.Database(process.env.OTHER_DATABASE_URL);
 for (let i = 0; i < 100000; i++) {
   db.get("select * from oye", (_, ret) => {
-    let a = ret;
+    // console.log(ret);
   });
 }
