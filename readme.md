@@ -4,6 +4,7 @@
 - nodejs prisma
 - nodejs typeorm
 - nodejs sequelize
+- python sqlalchemy
 
 ## Table Structure
 
@@ -70,4 +71,7 @@ node prisma.js  26.15s user 1.69s system 102% cpu 27.255 total
 node sequelize.js  66.42s user 6.64s system 144% cpu 50.663 total
 node sequelize.js  66.38s user 6.56s system 144% cpu 50.581 total
 node sequelize.js  65.99s user 6.57s system 143% cpu 50.714 total
+poetry run python alchemy.py  1.96s user 0.06s system 98% cpu 2.054 total
+poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.071 total
+poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.068 total
 ```
