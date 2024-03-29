@@ -32,4 +32,6 @@ query = select(oye.c)
 with engine.connect() as conn:
     for i in range(100000):
         result = conn.execute(query)
-        # print(result.first())
+        # for row in result:
+            # b = row
+            # print(row)

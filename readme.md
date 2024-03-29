@@ -5,6 +5,7 @@
 - nodejs typeorm
 - nodejs sequelize
 - python sqlalchemy
+- python sqlite3
 
 ## Table Structure
 
@@ -54,6 +55,8 @@ time node sqlite.js
 time node typeorm.js
 time node prisma.js
 time node sequelize.js
+time poetry run python alchemy.py
+time poetry run python sqlite.py
 ```
 
 ## operation result
@@ -74,4 +77,7 @@ node sequelize.js  65.99s user 6.57s system 143% cpu 50.714 total
 poetry run python alchemy.py  1.96s user 0.06s system 98% cpu 2.054 total
 poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.071 total
 poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.068 total
+poetry run python sqlite.py  4.90s user 0.33s system 99% cpu 5.270 total
+poetry run python sqlite.py  4.91s user 0.33s system 99% cpu 5.284 total
+poetry run python sqlite.py  4.91s user 0.34s system 99% cpu 5.295 total
 ```
