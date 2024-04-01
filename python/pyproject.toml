@@ -7,6 +7,7 @@ authors = ["sdhou <xiaohou.don@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.12"
 SQLAlchemy = "^2.0.29"
+peewee = "^3.17.1"
 
 
 [build-system]

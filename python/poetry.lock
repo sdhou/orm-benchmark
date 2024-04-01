@@ -72,6 +72,16 @@ docs = ["Sphinx", "furo"]
 test = ["objgraph", "psutil"]
 
 [[package]]
+name = "peewee"
+version = "3.17.1"
+description = "a little orm"
+optional = false
+python-versions = "*"
+files = [
+    {file = "peewee-3.17.1.tar.gz", hash = "sha256:e009ac4227c4fdc0058a56e822ad5987684f0a1fbb20fed577200785102581c3"},
+]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.29"
 description = "Database Abstraction Library"
@@ -172,4 +182,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "07c5f6130a8010db9a2893db5851b9779e9e0619d3ada1c22bc44feaa5d37ea2"
+content-hash = "26e2c855dd9c70e6aa97b1a6ad21e820d0dbf146bf478b5f8cc8aba767c73599"

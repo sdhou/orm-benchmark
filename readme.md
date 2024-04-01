@@ -4,8 +4,9 @@
 - nodejs prisma
 - nodejs typeorm
 - nodejs sequelize
-- python sqlalchemy
 - python sqlite3
+- python sqlalchemy
+- python peewee
 
 ## Table Structure
 
@@ -80,4 +81,7 @@ poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.068 total
 poetry run python sqlite.py  4.90s user 0.33s system 99% cpu 5.270 total
 poetry run python sqlite.py  4.91s user 0.33s system 99% cpu 5.284 total
 poetry run python sqlite.py  4.91s user 0.34s system 99% cpu 5.295 total
+poetry run python peewee1.py  31.95s user 0.59s system 99% cpu 32.649 total
+poetry run python peewee1.py  31.50s user 0.43s system 99% cpu 31.994 total
+poetry run python peewee1.py  31.63s user 0.53s system 99% cpu 32.257 total
 ```
