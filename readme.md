@@ -7,6 +7,7 @@
 - python sqlite3
 - python sqlalchemy
 - python peewee
+- golang gorm
 
 ## Table Structure
 
@@ -84,4 +85,7 @@ poetry run python sqlite.py  4.91s user 0.34s system 99% cpu 5.295 total
 poetry run python peewee1.py  31.95s user 0.59s system 99% cpu 32.649 total
 poetry run python peewee1.py  31.50s user 0.43s system 99% cpu 31.994 total
 poetry run python peewee1.py  31.63s user 0.53s system 99% cpu 32.257 total
+./gorm  15.23s user 0.57s system 103% cpu 15.208 total
+./gorm  15.26s user 0.58s system 104% cpu 15.209 total
+./gorm  15.23s user 0.57s system 104% cpu 15.180 total
 ```
