@@ -9,16 +9,16 @@ import (
 )
 
 type Oye struct {
-	ID      int    `gorm:"primaryKey;autoIncrement"`
-	Column1 string `gorm:"type:text;default:''"`
-	Column2 string `gorm:"type:text;default:''"`
-	Column3 string `gorm:"type:text;default:''"`
-	Column4 string `gorm:"type:text;default:''"`
-	Column5 string `gorm:"type:text;default:''"`
-	Column6 string `gorm:"type:text;default:''"`
-	Column7 string `gorm:"type:text;default:''"`
-	Column8 string `gorm:"type:text;default:''"`
-	Column9 string `gorm:"type:text;default:''"`
+	ID       int    `gorm:"primaryKey;autoIncrement"`
+	Column1  string `gorm:"type:text;default:''"`
+	Column2  string `gorm:"type:text;default:''"`
+	Column3  string `gorm:"type:text;default:''"`
+	Column4  string `gorm:"type:text;default:''"`
+	Column5  string `gorm:"type:text;default:''"`
+	Column6  string `gorm:"type:text;default:''"`
+	Column7  string `gorm:"type:text;default:''"`
+	Column8  string `gorm:"type:text;default:''"`
+	Column9  string `gorm:"type:text;default:''"`
 	Column10 string `gorm:"type:text;default:''"`
 	Column11 string `gorm:"type:text;default:''"`
 	Column12 string `gorm:"type:text;default:''"`
@@ -41,8 +41,8 @@ func main() {
 	if err != nil {
 		panic("failed to connect database")
 	}
-	var oye[] Oye
-	for i:=0; i<100000;i++{
+	var oye []Oye
+	for i := 0; i < 100000; i++ {
 		db.Find(&oye)
 		// fmt.Println(len(oye))
 	}
