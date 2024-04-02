@@ -8,6 +8,7 @@
 - python sqlalchemy
 - python peewee
 - golang gorm
+- golang sqlite
 
 ## Table Structure
 
@@ -64,6 +65,7 @@ time poetry run python sqlite.py
 ## operation result
 
 ```txt
+# nodejs
 node sqlite.js  5.10s user 1.69s system 127% cpu 5.310 total
 node sqlite.js  5.12s user 1.67s system 127% cpu 5.325 total
 node sqlite.js  5.12s user 1.67s system 127% cpu 5.338 total
@@ -76,6 +78,8 @@ node prisma.js  26.15s user 1.69s system 102% cpu 27.255 total
 node sequelize.js  66.42s user 6.64s system 144% cpu 50.663 total
 node sequelize.js  66.38s user 6.56s system 144% cpu 50.581 total
 node sequelize.js  65.99s user 6.57s system 143% cpu 50.714 total
+
+# python
 poetry run python alchemy.py  1.96s user 0.06s system 98% cpu 2.054 total
 poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.071 total
 poetry run python alchemy.py  1.97s user 0.06s system 97% cpu 2.068 total
@@ -85,7 +89,12 @@ poetry run python sqlite.py  4.91s user 0.34s system 99% cpu 5.295 total
 poetry run python peewee1.py  31.95s user 0.59s system 99% cpu 32.649 total
 poetry run python peewee1.py  31.50s user 0.43s system 99% cpu 31.994 total
 poetry run python peewee1.py  31.63s user 0.53s system 99% cpu 32.257 total
+
+# golang
 ./gorm  15.23s user 0.57s system 103% cpu 15.208 total
 ./gorm  15.26s user 0.58s system 104% cpu 15.209 total
 ./gorm  15.23s user 0.57s system 104% cpu 15.180 total
+./sqlite  4.32s user 4.09s system 107% cpu 7.827 total
+./sqlite  4.34s user 4.05s system 107% cpu 7.774 total
+./sqlite  4.37s user 4.06s system 107% cpu 7.814 total
 ```
