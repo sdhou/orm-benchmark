@@ -9,6 +9,7 @@
 - python peewee
 - golang gorm
 - golang sqlite
+- java mybatis
 
 ## Table Structure
 
@@ -97,4 +98,9 @@ poetry run python peewee1.py  31.63s user 0.53s system 99% cpu 32.257 total
 ./sqlite  4.32s user 4.09s system 107% cpu 7.827 total
 ./sqlite  4.34s user 4.05s system 107% cpu 7.774 total
 ./sqlite  4.37s user 4.06s system 107% cpu 7.814 total
+
+# java
+curl -i 127.0.0.1:8080/mybatis  0.01s user 0.01s system 0% cpu 26.871 total
+curl -i 127.0.0.1:8080/mybatis  0.01s user 0.01s system 0% cpu 26.769 total
+curl -i 127.0.0.1:8080/mybatis  0.01s user 0.01s system 0% cpu 26.812 total
 ```

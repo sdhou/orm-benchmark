@@ -1,0 +1,5 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:/opt/code/testnode/sqlite.db
