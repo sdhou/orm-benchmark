@@ -148,15 +148,16 @@ public class OyeController {
         Connection conn = DriverManager.getConnection(sqlitePath);
         Statement stmt = conn.createStatement();
         for (int i = 0; i < 100000; i++) {
-            ResultSet rs = stmt.executeQuery("SELECT * FROM oye");
-            while (rs.next()) {
-                int id = rs.getInt("id");
+            try (ResultSet rs = stmt.executeQuery("SELECT * FROM oye")) {
+                while (rs.next()) {
+                    rs.getInt("id");
+                }
             }
         }
     }
 
     @GetMapping(value = "/jpa")
-    public void jpa(){
+    public void jpa() {
         for (int i = 0; i < 100000; i++) {
             oyeJpaService.getAll();
         }
