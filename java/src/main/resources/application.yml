@@ -3,3 +3,8 @@ spring:
   datasource:
     driver-class-name: org.sqlite.JDBC
     url: jdbc:sqlite:/opt/code/testnode/sqlite.db
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: none

@@ -103,4 +103,10 @@ poetry run python peewee1.py  31.63s user 0.53s system 99% cpu 32.257 total
 curl -i 127.0.0.1:8080/mybatis  0.01s user 0.01s system 0% cpu 26.871 total
 curl -i 127.0.0.1:8080/mybatis  0.01s user 0.01s system 0% cpu 26.769 total
 curl -i 127.0.0.1:8080/mybatis  0.01s user 0.01s system 0% cpu 26.812 total
+curl -i 127.0.0.1:8080/jdbc  0.01s user 0.02s system 1% cpu 2.476 total
+curl -i 127.0.0.1:8080/jdbc  0.01s user 0.01s system 0% cpu 2.238 total
+curl -i 127.0.0.1:8080/jdbc  0.01s user 0.01s system 0% cpu 2.290 total
+curl -i 127.0.0.1:8080/jpa  0.01s user 0.01s system 0% cpu 5.681 total
+curl -i 127.0.0.1:8080/jpa  0.01s user 0.01s system 0% cpu 5.506 total
+curl -i 127.0.0.1:8080/jpa  0.01s user 0.01s system 0% cpu 5.463 total
 ```

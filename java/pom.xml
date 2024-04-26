@@ -38,10 +38,8 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!--SpringBoot-->
     <dependency>
       <groupId>com.baomidou</groupId>
-      <!--3.5.4开始,支持SpringBoot3使用此版本-->
       <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
       <version>3.5.6</version>
     </dependency>
@@ -54,6 +52,16 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <version>3.2.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-community-dialects</artifactId>
+      <version>6.4.3.Final</version>
     </dependency>
   </dependencies>
   <build>
