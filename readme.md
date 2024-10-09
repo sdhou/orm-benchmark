@@ -10,6 +10,8 @@
 - golang gorm
 - golang sqlite
 - java mybatis
+- java jdbc
+- jpa
 
 ## Table Structure
 
